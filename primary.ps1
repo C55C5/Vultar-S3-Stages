@@ -65,18 +65,12 @@ param (
 }
 
 Clear-Host
-Write-Host " _____ _____  _      ____             ____        _           " -ForegroundColor Yellow
-Write-Host "| ____|_   _|/ \    |  _ \ ___  ___  |  _ \ _   _| | ___  ___ " -ForegroundColor Yellow
-Write-Host "|  _|   | | / _ \   | |_) / _ \/ __| | |_) | | | | |/ _ \/ __|" -ForegroundColor Yellow
-Write-Host "| |___  | |/ ___ \  |  _ <  __/ (__  |  _ <| |_| | |  __/\__ \" -ForegroundColor Yellow
-Write-Host "|_____| |_/_/   \_\ |_| \_\___|\___| |_| \_\\__,_|_|\___||___/" -ForegroundColor Yellow
 Write-ColoredLine ""
-Write-ColoredLine "=== Recording Rule Hub ===" Yellow
+Write-ColoredLine "=== S3 Final Check ===" Yellow
 Write-ColoredLine "Complete all steps with 100% success to pass." White
 Write-ColoredLine "Applications will download and extract to C:\ToolsETA." White
 Write-ColoredLine "If a prompt shows up, press OK to run the application." White
 Write-ColoredLine "Follow the instructions listed on each step." White
-Write-ColoredLine "This T2 PowerShell process currently has 6 steps." White
 Write-Host ""
 $cpu = Get-WmiObject Win32_Processor | Select-Object -First 1
 
